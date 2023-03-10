@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <nav class="bg-slate-300 border-slate-200 px-2 sm:px-4 py-2.5 dark:bg-slate-800">
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
+  <nav class="bg-slate-300 border-slate-200 px-2 sm:px-4 py-2.5 dark:bg-slate-800 w-100 mb-4">
+    <div class="container flex flex-wrap items-center justify-between mx-auto w-100">
       <router-link to="/" class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="dark:fill-slate-400 icon icon-tabler icon-tabler-pokeball" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -27,10 +27,10 @@
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
         <ul class="flex flex-col p-2 mt-4 border-0 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
           <li>
-            <router-link to="/" class="block py-2 pl-3 pr-4 text-emerald-500 bg-transparent" aria-current="page">Home</router-link>
+            <router-link to="/" class="block py-2 pl-3 pr-4 text-purple-700 dark:text-purple-500 bg-transparent" aria-current="page">Home</router-link>
           </li>
           <li>
-            <router-link to="about" class="block py-2 pl-3 pr-4 text-emerald-500">About</router-link>
+            <router-link to="about" class="block py-2 pl-3 pr-4 text-purple-700 dark:text-purple-500">About</router-link>
           </li>
         </ul>
       </div>
