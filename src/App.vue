@@ -37,9 +37,7 @@
   <div class="main">
     <router-view></router-view>
   </div>
-  <footer class="bg-body-tertiary">
-    <div>{{ new Date().getFullYear() }}</div>
-  </footer>
+
 </template>
 
 <style>

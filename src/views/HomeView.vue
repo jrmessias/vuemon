@@ -2,18 +2,17 @@
 import {computed, onMounted, reactive, ref} from "vue";
 import ListPokemons from "@/components/ListPokemons.vue";
 import CardPokemonSelected from "@/components/CardPokemonSelected.vue";
+import axios from "axios";
 
+let urlPokemonList = ref("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0");
 let baseUrlSvg = ref("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/");
 let pokemons = reactive(ref());
 let searchPokemon = ref("");
 let pokemonSelected = reactive(ref());
 
 onMounted(() => {
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
-      .then(res => res.json())
-      .then(res => {
-        pokemons.value = res.results
-      });
+  axios.get(urlPokemonList.value)
+      .then(res => pokemons.value = res.data.results);
 })
 
 const pokemonsFiltered = computed(() => {
@@ -26,10 +25,8 @@ const pokemonsFiltered = computed(() => {
 })
 
 const selectPokemon = async (pokemon) => {
-  fetch(pokemon.url)
-      .then(res => res.json())
-      .then(res => pokemonSelected.value = res);
-  console.log(pokemonSelected.value)
+  axios.get(pokemon.url)
+      .then(res => pokemonSelected.value = res.data);
 }
 </script>
 
@@ -71,7 +68,7 @@ const selectPokemon = async (pokemon) => {
 </template>
 
 <style scoped>
-.card-list{
+.card-list {
   overflow-y: scroll;
   height: 75vh;
   overflow-x: hidden;;
