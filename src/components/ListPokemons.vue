@@ -1,33 +1,16 @@
 <script setup>
-const pokemon = defineProps(["name","baseUrlSvg"])
-
+const pokemon = defineProps(["name", "image"])
 </script>
 
 <template>
-  <div class="col-4">
-    <div class="card mb-3 cardListPokemon border-0 h-100">
-      <p class="text-center">
-        {{ name.charAt(0).toUpperCase() + name.slice(1) }}
-      </p>
-      <img
-          class="card-img-top p-1"
-          :src="baseUrlSvg"
-      :alt="pokemon.name"
-      height="80">
-    </div>
+  <div
+      class="p-1 rounded-lg hover:cursor-pointer m-2 bg-gradient-to-t from-blue-500 hover:from-blue-700 dark:from-blue-900 dark:hover:from-blue-700 flex-col justify-around">
+    <p class="text-center text-xs lg:font-medium lg:text-base dark:text-slate-300 pb-2">
+      {{ name.charAt(0).toUpperCase() + name.slice(1) }}
+    </p>
+    <img class="p-1" :src="image" :alt="pokemon.name" height="80">
   </div>
 </template>
 
 <style>
-
-.cardListPokemon{
-  background: #212529;
-}
-.cardListPokemon:hover{
-  background: #2B3035;
-  cursor: pointer;
-}
-.cardListPokemon img:hover{
-  zoom: .95;
-}
 </style>
