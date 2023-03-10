@@ -52,6 +52,8 @@ Deploy por [Github](https://vuemon.jrmessias.com.br)
 
 Deploy por [Netlify](https://fantastic-banoffee.netlify.app/)
 
+Deploy por [Vercel](https://vuemon-jrmessias.vercel.app/)
+
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
