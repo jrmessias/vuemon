@@ -1,29 +1,63 @@
-# vuemon
+# Vuemon
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto de Pokedéx para estudo de tecnologias front-end.
 
-## Recommended IDE Setup
+## Stack utilizada
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+**Front-end:**
+- [Vite 4](https://vitejs.dev/)
+- [Vue 3](https://vuejs.org/)
+- [Vue Router 4](https://router.vuejs.org/)
+- [Axios](https://axios-http.com/ptbr/)
+- [Tailwind CSS 3](https://tailwindcss.com/)
+- [Flowbite](https://flowbite.com/)
+- [PokéApi](https://pokeapi.co/)
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Rodando localmente
 
-## Project Setup
+Clone o projeto
 
-```sh
-npm install
+```bash
+  git clone https://github.com/jrmessias/vuemon
 ```
 
-### Compile and Hot-Reload for Development
+Entre no diretório do projeto
 
-```sh
-npm run dev
+```bash
+  cd vuemon
 ```
 
-### Compile and Minify for Production
+Instale as dependências
 
-```sh
-npm run build
+```bash
+  npm install
 ```
+
+Inicie o servidor
+
+```bash
+  vite
+```
+_Utilize o atalho de teclado `o` para abrir no navegador._
+
+
+## Relacionados
+
+Projeto original de [Yuri Marcon](https://github.com/yurimarcon)
+
+## Online
+
+Deploy por [Github](https://vuemon.jrmessias.com.br)
+
+Deploy por [Netlify](https://fantastic-banoffee.netlify.app/)
+
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Feedback
+
+Se você tiver algum feedback, por favor entre em contato no meu site [www.jrmessias.com.br](www.jrmessias.com.br)
+
