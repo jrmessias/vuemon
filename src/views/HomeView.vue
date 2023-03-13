@@ -3,6 +3,7 @@ import {computed, onMounted, reactive, ref} from "vue";
 import ListPokemons from "@/components/ListPokemons.vue";
 import CardPokemonSelected from "@/components/CardPokemonSelected.vue";
 import axios from "axios";
+import {initFlowbite} from "flowbite";
 
 let urlPokemonList = ref("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0");
 let baseUrlSvg = ref("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/");
@@ -11,6 +12,7 @@ let searchPokemon = ref("");
 let pokemonSelected = reactive(ref());
 
 onMounted(() => {
+  initFlowbite();
   axios.get(urlPokemonList.value)
       .then(res => pokemons.value = res.data.results);
 })
