@@ -8,11 +8,12 @@ Projeto de Pokedéx para estudo de tecnologias front-end.
 - [Vite 4](https://vitejs.dev/)
 - [Vue 3](https://vuejs.org/)
 - [Vue Router 4](https://router.vuejs.org/)
+- [Vite PWA](https://vite-pwa-org.netlify.app/)
 - [Axios](https://axios-http.com/ptbr/)
 - [Tailwind CSS 3](https://tailwindcss.com/)
 - [Flowbite](https://flowbite.com/)
 - [PokéApi](https://pokeapi.co/)
-
+- Deploy - [Github](https://github.com/) / [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
 
 ## Rodando localmente
 
@@ -44,7 +45,7 @@ _Utilize o atalho de teclado `o` para abrir no navegador._
 
 ## Relacionados
 
-Projeto original de [Yuri Marcon](https://github.com/yurimarcon)
+Projeto baseado em [Yuri Marcon - PokeVite](https://github.com/yurimarcon/PokeVite)
 
 ## Online
 
