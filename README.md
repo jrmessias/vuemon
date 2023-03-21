@@ -55,6 +55,10 @@ Deploy por [Netlify](https://fantastic-banoffee.netlify.app/)
 
 Deploy por [Vercel](https://vuemon-jrmessias.vercel.app/)
 
+## TODO
+- [ ] Ajustes na responsividade
+- [ ] Página sobre
+
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
